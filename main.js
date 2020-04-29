@@ -8,8 +8,8 @@ var matr_1 = [
 var matr_2 = [
     [0, 7, 1],
     [2, 8, 9],
-    [3, 3, 1]
-    // [6, 0, 4]
+    [3, 3, 1],
+    [6, 0, 4]
 ]
 
 // console.log(matr)
@@ -21,6 +21,9 @@ function multMatr(matr_1, matr_2){
     var lineMatr_1 = matr_1.length
     var lineMatr_2 = matr_2.length
     
+    if(columMatr_1 != lineMatr_2){ 
+        return console.log('Матрицы не согласованы!')
+    }
     var multMatr_3 = []
     for (var y=0; y<lineMatr_1; y++){
         multMatr_3[y] = [];
